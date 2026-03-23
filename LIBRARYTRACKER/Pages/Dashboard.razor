@@ -1,6 +1,313 @@
-﻿namespace LIBRARYTRACKER.Pages
-{
-    public class Dashboard
+﻿@page "/dashboard"
+@using MudBlazor
+
+<PageTitle>Dashboard – Library Tracker</PageTitle>
+
+<MudThemeProvider Theme="_theme" />
+
+<div class="dashboard-bg">
+
+    <!-- ══ TOP BAR ══ -->
+    <div class="topbar">
+        <div class="topbar-left">
+            <MudIcon Icon="@Icons.Material.Filled.MenuBook" Style="color:#1a7a50; font-size:2rem;" />
+            <MudText Typo="Typo.h6" Class="topbar-title">Library Tracker System</MudText>
+        </div>
+        <div class="topbar-right">
+            <MudIcon Icon="@Icons.Material.Filled.AccountCircle" Style="color:#1a7a50; font-size:2rem;" />
+        </div>
+    </div>
+
+    <!-- ══ WELCOME BANNER ══ -->
+    <div class="welcome-banner">
+        <svg class="banner-svg" viewBox="0 0 1200 220"
+             xmlns="http://www.w3.org/2000/svg"
+             preserveAspectRatio="xMidYMid slice">
+            <defs>
+                <linearGradient id="db-sky" x1="0" y1="0" x2="1" y2="1">
+                    <stop offset="0%" stop-color="#1e8c5e" />
+                    <stop offset="55%" stop-color="#4db87a" />
+                    <stop offset="100%" stop-color="#c8e04a" />
+                </linearGradient>
+                <linearGradient id="db-mt" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#145c3a" />
+                    <stop offset="100%" stop-color="#0d4028" />
+                </linearGradient>
+                <linearGradient id="db-du" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="#b8d43e" />
+                    <stop offset="100%" stop-color="#92b030" />
+                </linearGradient>
+            </defs>
+            <rect width="1200" height="220" fill="url(#db-sky)" />
+            <circle cx="80" cy="55" r="38" fill="#38b06a" opacity="0.68" />
+            <path d="M0,155 L120,65 L240,125 L380,48 L520,118 L660,42 L800,105 L940,38 L1080,88 L1200,52 L1200,220 L0,220Z"
+                  fill="url(#db-mt)" opacity="0.55" />
+            <path d="M0,195 Q150,145 300,178 Q480,130 660,172 Q840,128 1020,168 Q1120,142 1200,158 L1200,220 L0,220Z"
+                  fill="url(#db-du)" opacity="0.88" />
+            <path d="M0,220 Q300,200 600,215 Q900,198 1200,212 L1200,220Z"
+                  fill="#82a028" opacity="0.72" />
+            <path d="M520,58 Q526,51 532,58 Q538,51 544,58" stroke="#dff09a" stroke-width="2.2" fill="none" stroke-linecap="round" />
+            <path d="M900,78 Q905,72 910,78 Q915,72 920,78" stroke="#dff09a" stroke-width="1.8" fill="none" stroke-linecap="round" />
+        </svg>
+        <div class="welcome-text">
+            <MudText Typo="Typo.h4" Class="welcome-title">Welcome to Your Dashboard</MudText>
+            <MudText Typo="Typo.body1" Class="welcome-sub">Manage your library resources all in one place.</MudText>
+        </div>
+    </div>
+
+    <!-- ══ DASHBOARD CARDS ══ -->
+    <div class="cards-section">
+        <MudText Typo="Typo.h6" Class="section-label">Quick Access</MudText>
+
+        <div class="cards-grid">
+
+            <!-- Book Review -->
+            <a href="/book-review" class="dash-card">
+                <div class="card-icon-wrap" style="background:linear-gradient(135deg,#1a7a50,#2eb87a);">
+                    <MudIcon Icon="@Icons.Material.Filled.RateReview" Class="card-icon" />
+                </div>
+                <MudText Typo="Typo.subtitle1" Class="card-title">Book Review</MudText>
+                <MudText Typo="Typo.body2" Class="card-desc">Read and write reviews for books in the library.</MudText>
+                <div class="card-arrow">
+                    <MudIcon Icon="@Icons.Material.Filled.ArrowForwardIos" Style="font-size:0.85rem; color:#1a7a50;" />
+                </div>
+            </a>
+
+            <!-- Book Items -->
+            <a href="/book-items" class="dash-card">
+                <div class="card-icon-wrap" style="background:linear-gradient(135deg,#2e7ab8,#4aaae0);">
+                    <MudIcon Icon="@Icons.Material.Filled.LibraryBooks" Class="card-icon" />
+                </div>
+                <MudText Typo="Typo.subtitle1" Class="card-title">Book Items</MudText>
+                <MudText Typo="Typo.body2" Class="card-desc">Browse and manage all book titles and inventory.</MudText>
+                <div class="card-arrow">
+                    <MudIcon Icon="@Icons.Material.Filled.ArrowForwardIos" Style="font-size:0.85rem; color:#2e7ab8;" />
+                </div>
+            </a>
+
+            <!-- Book Transaction -->
+            <a href="/book-transaction" class="dash-card">
+                <div class="card-icon-wrap" style="background:linear-gradient(135deg,#b87a1a,#e0aa4a);">
+                    <MudIcon Icon="@Icons.Material.Filled.ReceiptLong" Class="card-icon" />
+                </div>
+                <MudText Typo="Typo.subtitle1" Class="card-title">Book Transaction</MudText>
+                <MudText Typo="Typo.body2" Class="card-desc">View and track all library book transactions.</MudText>
+                <div class="card-arrow">
+                    <MudIcon Icon="@Icons.Material.Filled.ArrowForwardIos" Style="font-size:0.85rem; color:#b87a1a;" />
+                </div>
+            </a>
+
+            <!-- Book Borrow -->
+            <a href="/book-borrow" class="dash-card">
+                <div class="card-icon-wrap" style="background:linear-gradient(135deg,#7a1ab8,#aa4ae0);">
+                    <MudIcon Icon="@Icons.Material.Filled.ImportContacts" Class="card-icon" />
+                </div>
+                <MudText Typo="Typo.subtitle1" Class="card-title">Book Borrow</MudText>
+                <MudText Typo="Typo.body2" Class="card-desc">Borrow books and manage your borrowing history.</MudText>
+                <div class="card-arrow">
+                    <MudIcon Icon="@Icons.Material.Filled.ArrowForwardIos" Style="font-size:0.85rem; color:#7a1ab8;" />
+                </div>
+            </a>
+
+        </div>
+    </div>
+
+</div>
+
+@code {
+    private MudTheme _theme = new()
     {
-    }
+        PaletteLight = new PaletteLight
+        {
+            Primary = "#1a7a50",
+            PrimaryDarken = "#155f3e",
+            Surface = "#ffffff",
+            Background = "#f4faf7"
+        }
+    };
 }
+
+<style>
+    /* ── PAGE ── */
+    .dashboard-bg {
+        min-height: 100vh;
+        background: #f0f7f4;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    /* ── TOP BAR ── */
+    .topbar {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background: #ffffff;
+        padding: 14px 40px;
+        box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .topbar-left {
+        display: flex;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .topbar-title {
+        color: #1a7a50 !important;
+        font-weight: 700 !important;
+        letter-spacing: 0.5px;
+    }
+
+    .topbar-right {
+        cursor: pointer;
+    }
+
+    /* ── WELCOME BANNER ── */
+    .welcome-banner {
+        position: relative;
+        height: 200px;
+        overflow: hidden;
+    }
+
+    .banner-svg {
+        position: absolute;
+        inset: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .welcome-text {
+        position: relative;
+        z-index: 2;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 52px;
+    }
+
+    .welcome-title {
+        color: #ffffff !important;
+        font-family: 'Georgia', serif !important;
+        font-weight: 700 !important;
+        font-size: 2rem !important;
+        text-shadow: 0 2px 10px rgba(0,0,0,0.20);
+        margin-bottom: 8px !important;
+    }
+
+    .welcome-sub {
+        color: rgba(255,255,255,0.90) !important;
+        font-size: 1rem !important;
+    }
+
+    /* ── CARDS SECTION ── */
+    .cards-section {
+        padding: 40px 52px;
+    }
+
+    .section-label {
+        color: #1a7a50 !important;
+        font-weight: 700 !important;
+        letter-spacing: 1.5px !important;
+        text-transform: uppercase;
+        margin-bottom: 24px !important;
+    }
+
+    /* ── CARDS GRID ── */
+    .cards-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 24px;
+        justify-items: center;
+    }
+
+    /* ── SINGLE CARD ── */
+    .dash-card {
+        background: #ffffff;
+        border-radius: 20px;
+        padding: 32px 24px 24px;
+        width: 100%;
+        max-width: 260px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        text-decoration: none;
+        transition: transform 0.22s, box-shadow 0.22s;
+        cursor: pointer;
+        position: relative;
+    }
+
+        .dash-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 12px 36px rgba(0,0,0,0.14);
+        }
+
+    /* ── ICON WRAP ── */
+    .card-icon-wrap {
+        width: 80px;
+        height: 80px;
+        border-radius: 22px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+    }
+
+    .card-icon {
+        font-size: 2.4rem !important;
+        color: #ffffff !important;
+    }
+
+    /* ── CARD TEXT ── */
+    .card-title {
+        color: #1a2e22 !important;
+        font-weight: 700 !important;
+        font-size: 1.05rem !important;
+        margin-bottom: 8px !important;
+    }
+
+    .card-desc {
+        color: #6b8c7a !important;
+        font-size: 0.84rem !important;
+        line-height: 1.5 !important;
+        margin-bottom: 16px !important;
+    }
+
+    /* ── ARROW ── */
+    .card-arrow {
+        margin-top: auto;
+        opacity: 0.7;
+        transition: opacity 0.2s, transform 0.2s;
+    }
+
+    .dash-card:hover .card-arrow {
+        opacity: 1;
+        transform: translateX(4px);
+    }
+
+    /* ── RESPONSIVE ── */
+    @@media (max-width: 1100px) {
+        .cards-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    @@media (max-width: 600px) {
+        .cards-grid {
+            grid-template-columns: 1fr;
+        }
+
+        .cards-section {
+            padding: 24px 20px;
+        }
+
+        .topbar {
+            padding: 14px 20px;
+        }
+    }
+</style>
