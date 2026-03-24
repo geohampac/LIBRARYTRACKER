@@ -7,7 +7,7 @@
 
 <div class="db-root">
 
-    <!-- ══ TOP BAR ══ -->
+    <!-- TOP BAR -->
     <header class="db-topbar">
         <div class="db-topbar-left">
             <div class="db-logo-pill">
@@ -18,193 +18,41 @@
                 <span class="db-brand-sub">Management System</span>
             </div>
         </div>
-        <div class="db-topbar-right">
-            <div class="db-notif">
-                <MudIcon Icon="@Icons.Material.Filled.Notifications" Class="db-notif-icon" />
-                <span class="db-notif-dot"></span>
-            </div>
-            <div class="db-user-pill">
-                <div class="db-avatar">L</div>
-                <span class="db-username">Librarian</span>
-                <MudIcon Icon="@Icons.Material.Filled.KeyboardArrowDown" Style="font-size:1rem;color:#4b7a62;" />
-            </div>
-        </div>
     </header>
 
-    <!-- ══ HERO BANNER ══ -->
+    <!-- HERO -->
     <section class="db-hero">
-        <!-- Decorative SVG background -->
-        <svg class="db-hero-svg" viewBox="0 0 1440 340" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice">
-            <defs>
-                <linearGradient id="heroGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-                    <stop offset="0%" stop-color="#0d5c3a" />
-                    <stop offset="45%" stop-color="#1a8c58" />
-                    <stop offset="100%" stop-color="#2eb87a" />
-                </linearGradient>
-                <linearGradient id="waveGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-                    <stop offset="0%" stop-color="#ffffff" stop-opacity="0.12" />
-                    <stop offset="100%" stop-color="#ffffff" stop-opacity="0.03" />
-                </linearGradient>
-                <filter id="glow">
-                    <feGaussianBlur stdDeviation="3" result="blur" />
-                    <feMerge><feMergeNode in="blur" /><feMergeNode in="SourceGraphic" /></feMerge>
-                </filter>
-            </defs>
-            <!-- Base -->
-            <rect width="1440" height="340" fill="url(#heroGrad)" />
-            <!-- Orbs -->
-            <circle cx="120" cy="80" r="120" fill="#ffffff" opacity="0.04" />
-            <circle cx="1320" cy="260" r="180" fill="#ffffff" opacity="0.05" />
-            <circle cx="780" cy="20" r="80" fill="#4de09a" opacity="0.07" />
-            <!-- Grid lines -->
-            <line x1="0" y1="80" x2="1440" y2="80" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" />
-            <line x1="0" y1="160" x2="1440" y2="160" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" />
-            <line x1="0" y1="240" x2="1440" y2="240" stroke="#ffffff" stroke-opacity="0.04" stroke-width="1" />
-            <line x1="360" y1="0" x2="360" y2="340" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
-            <line x1="720" y1="0" x2="720" y2="340" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
-            <line x1="1080" y1="0" x2="1080" y2="340" stroke="#ffffff" stroke-opacity="0.03" stroke-width="1" />
-            <!-- Wave layers -->
-            <path d="M0,220 C240,160 480,200 720,180 C960,160 1200,200 1440,175 L1440,340 L0,340Z"
-                  fill="url(#waveGrad)" />
-            <path d="M0,270 C300,230 600,260 900,245 C1100,234 1280,252 1440,242 L1440,340 L0,340Z"
-                  fill="#ffffff" opacity="0.06" />
-            <!-- Book icon decoration -->
-            <rect x="1280" y="60" width="60" height="80" rx="6" fill="#ffffff" opacity="0.06" filter="url(#glow)" />
-            <rect x="1290" y="70" width="40" height="3" rx="2" fill="#4de09a" opacity="0.5" />
-            <rect x="1290" y="80" width="30" height="3" rx="2" fill="#4de09a" opacity="0.4" />
-            <rect x="1290" y="90" width="35" height="3" rx="2" fill="#4de09a" opacity="0.3" />
-            <!-- Dots -->
-            <circle cx="60" cy="200" r="4" fill="#4de09a" opacity="0.5" />
-            <circle cx="200" cy="130" r="3" fill="#ffffff" opacity="0.3" />
-            <circle cx="900" cy="60" r="5" fill="#4de09a" opacity="0.4" />
-            <circle cx="1100" cy="180" r="3" fill="#ffffff" opacity="0.25" />
-        </svg>
-
-        <!-- Hero text content -->
         <div class="db-hero-content">
-            <div class="db-hero-badge">
-                <MudIcon Icon="@Icons.Material.Filled.AutoStories" Style="font-size:0.9rem;" />
-                <span>Library Management</span>
-            </div>
-            <h1 class="db-hero-title">Welcome back, Librarian 👋</h1>
-            <p class="db-hero-sub">Manage your library resources, track transactions, and stay on top of everything — all in one place.</p>
-
-            <!-- Mini stats in hero -->
-            <div class="db-hero-stats">
-                <div class="db-hero-stat">
-                    <span class="db-hero-stat-num">1,284</span>
-                    <span class="db-hero-stat-label">Total Books</span>
-                </div>
-                <div class="db-hero-stat-divider"></div>
-                <div class="db-hero-stat">
-                    <span class="db-hero-stat-num">47</span>
-                    <span class="db-hero-stat-label">Borrowed Today</span>
-                </div>
-                <div class="db-hero-stat-divider"></div>
-                <div class="db-hero-stat">
-                    <span class="db-hero-stat-num">12</span>
-                    <span class="db-hero-stat-label">Overdue</span>
-                </div>
-            </div>
+            <h1 class="db-hero-title">Welcome back 👋</h1>
+            <p class="db-hero-sub">Manage your library resources easily.</p>
         </div>
     </section>
 
-    <!-- ══ MAIN CONTENT ══ -->
+    <!-- BODY -->
     <div class="db-body">
 
-        <!-- Section label -->
-        <div class="db-section-head">
-            <div class="db-section-line"></div>
-            <span class="db-section-label">Quick Access</span>
-            <div class="db-section-line"></div>
-        </div>
-
-        <!-- ══ CARDS GRID ══ -->
         <div class="db-cards-grid">
 
-            <!-- Book Review -->
-            <a href="/book-review" class="db-card" style="--card-color:#1a7a50;--card-color-light:#edf7f2;">
-                <div class="db-card-glow"></div>
-                <div class="db-card-icon-wrap" style="background:linear-gradient(135deg,#1a7a50,#2eb87a);">
-                    <MudIcon Icon="@Icons.Material.Filled.RateReview" Class="db-card-icon" />
-                </div>
-                <div class="db-card-body">
-                    <span class="db-card-tag">Reviews</span>
-                    <p class="db-card-title">Book Review</p>
-                    <p class="db-card-desc">Read and write reviews for books in the library collection.</p>
-                </div>
-                <div class="db-card-footer">
-                    <span class="db-card-link">Open module</span>
-                    <div class="db-card-arrow">
-                        <MudIcon Icon="@Icons.Material.Filled.ArrowForward" Style="font-size:0.9rem;" />
-                    </div>
-                </div>
+            <a href="/book-review" class="db-card">
+                <MudIcon Icon="@Icons.Material.Filled.RateReview" />
+                <p>Book Review</p>
             </a>
 
-            <!-- Book Items -->
-            <a href="/book-items" class="db-card" style="--card-color:#1565c0;--card-color-light:#e8f0fe;">
-                <div class="db-card-glow"></div>
-                <div class="db-card-icon-wrap" style="background:linear-gradient(135deg,#1565c0,#42a5f5);">
-                    <MudIcon Icon="@Icons.Material.Filled.LibraryBooks" Class="db-card-icon" />
-                </div>
-                <div class="db-card-body">
-                    <span class="db-card-tag">Inventory</span>
-                    <p class="db-card-title">Book Items</p>
-                    <p class="db-card-desc">Browse and manage all book titles and library inventory.</p>
-                </div>
-                <div class="db-card-footer">
-                    <span class="db-card-link">Open module</span>
-                    <div class="db-card-arrow">
-                        <MudIcon Icon="@Icons.Material.Filled.ArrowForward" Style="font-size:0.9rem;" />
-                    </div>
-                </div>
+            <a href="/book-items" class="db-card">
+                <MudIcon Icon="@Icons.Material.Filled.LibraryBooks" />
+                <p>Book Items</p>
             </a>
 
-            <!-- Book Transaction -->
-            <a href="/book-transaction" class="db-card" style="--card-color:#b45309;--card-color-light:#fef3c7;">
-                <div class="db-card-glow"></div>
-                <div class="db-card-icon-wrap" style="background:linear-gradient(135deg,#b45309,#f59e0b);">
-                    <MudIcon Icon="@Icons.Material.Filled.ReceiptLong" Class="db-card-icon" />
-                </div>
-                <div class="db-card-body">
-                    <span class="db-card-tag">Transactions</span>
-                    <p class="db-card-title">Book Transaction</p>
-                    <p class="db-card-desc">View and track all library book lending transactions.</p>
-                </div>
-                <div class="db-card-footer">
-                    <span class="db-card-link">Open module</span>
-                    <div class="db-card-arrow">
-                        <MudIcon Icon="@Icons.Material.Filled.ArrowForward" Style="font-size:0.9rem;" />
-                    </div>
-                </div>
+            <a href="/book-transaction" class="db-card">
+                <MudIcon Icon="@Icons.Material.Filled.ReceiptLong" />
+                <p>Transactions</p>
             </a>
 
-            <!-- Book Borrow -->
-            <a href="/book-borrow" class="db-card" style="--card-color:#6d28d9;--card-color-light:#f3f0ff;">
-                <div class="db-card-glow"></div>
-                <div class="db-card-icon-wrap" style="background:linear-gradient(135deg,#6d28d9,#a78bfa);">
-                    <MudIcon Icon="@Icons.Material.Filled.ImportContacts" Class="db-card-icon" />
-                </div>
-                <div class="db-card-body">
-                    <span class="db-card-tag">Borrowing</span>
-                    <p class="db-card-title">Book Borrow</p>
-                    <p class="db-card-desc">Borrow books and manage your borrowing history easily.</p>
-                </div>
-                <div class="db-card-footer">
-                    <span class="db-card-link">Open module</span>
-                    <div class="db-card-arrow">
-                        <MudIcon Icon="@Icons.Material.Filled.ArrowForward" Style="font-size:0.9rem;" />
-                    </div>
-                </div>
+            <a href="/book-borrow" class="db-card">
+                <MudIcon Icon="@Icons.Material.Filled.ImportContacts" />
+                <p>Borrow</p>
             </a>
 
-        </div>
-
-        <!-- ══ FOOTER ══ -->
-        <div class="db-footer">
-            <span>© @DateTime.Now.Year Library Tracker System</span>
-            <span class="db-footer-dot">·</span>
-            <span>All rights reserved</span>
         </div>
 
     </div>
@@ -216,528 +64,87 @@
         PaletteLight = new PaletteLight
         {
             Primary = "#1a7a50",
-            PrimaryDarken = "#0d5c3a",
-            Surface = "#ffffff",
             Background = "#f0f7f4"
         }
     };
 }
 
 <style>
-    /* ══ IMPORTS ══ */
-    @@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=DM+Sans:wght@300;400;500;600&display=swap');
+    @@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&display=swap');
 
-    /* ══ ROOT ══ */
     .db-root {
-        min-height: 100vh;
-        background: #f0f7f4;
         font-family: 'DM Sans', sans-serif;
+        background: #f0f7f4;
+        min-height: 100vh;
     }
 
-    /* ══ TOPBAR ══ */
+    /* TOP BAR */
     .db-topbar {
         display: flex;
-        align-items: center;
         justify-content: space-between;
-        background: #ffffff;
-        padding: 12px 48px;
-        box-shadow: 0 1px 0 #e2ede8, 0 4px 24px rgba(26,122,80,0.06);
-        position: sticky;
-        top: 0;
-        z-index: 200;
+        padding: 12px 40px;
+        background: #fff;
     }
 
-    .db-topbar-left {
-        display: flex;
-        align-items: center;
-        gap: 14px;
-    }
-
-    .db-topbar-right {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-    }
-
-    .db-logo-pill {
-        width: 44px;
-        height: 44px;
-        background: linear-gradient(135deg, #0d5c3a, #2eb87a);
-        border-radius: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 4px 14px rgba(26,122,80,0.35);
-    }
-
-    .db-logo-icon {
-        font-size: 1.4rem !important;
-        color: #ffffff !important;
-    }
-
-    .db-brand {
-        display: flex;
-        flex-direction: column;
-        line-height: 1.2;
-    }
-
-    .db-brand-name {
-        font-family: 'Playfair Display', serif;
-        font-weight: 700;
-        font-size: 1.05rem;
-        color: #0d3d26;
-        letter-spacing: -.01em;
-    }
-
-    .db-brand-sub {
-        font-size: 0.7rem;
-        color: #6b9e84;
-        font-weight: 400;
-        letter-spacing: .04em;
-        text-transform: uppercase;
-    }
-
-    .db-notif {
-        position: relative;
-        width: 40px;
-        height: 40px;
-        background: #f0f7f4;
-        border-radius: 12px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        cursor: pointer;
-        transition: background .2s;
-    }
-
-        .db-notif:hover {
-            background: #ddeee6;
-        }
-
-    .db-notif-icon {
-        font-size: 1.25rem !important;
-        color: #1a7a50 !important;
-    }
-
-    .db-notif-dot {
-        position: absolute;
-        top: 8px;
-        right: 9px;
-        width: 8px;
-        height: 8px;
-        background: #ef4444;
-        border-radius: 50%;
-        border: 2px solid #fff;
-    }
-
-    .db-user-pill {
-        display: flex;
-        align-items: center;
-        gap: 9px;
-        background: #f0f7f4;
-        border: 1px solid #c8e2d5;
-        border-radius: 50px;
-        padding: 6px 14px 6px 6px;
-        cursor: pointer;
-        transition: background .2s, box-shadow .2s;
-    }
-
-        .db-user-pill:hover {
-            background: #ddeee6;
-            box-shadow: 0 2px 10px rgba(26,122,80,0.12);
-        }
-
-    .db-avatar {
-        width: 30px;
-        height: 30px;
-        background: linear-gradient(135deg, #1a7a50, #2eb87a);
-        border-radius: 50%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: .85rem;
-        font-weight: 700;
-        color: #fff;
-    }
-
-    .db-username {
-        font-size: .85rem;
-        font-weight: 600;
-        color: #0d3d26;
-    }
-
-    /* ══ HERO ══ */
+    /* HERO */
     .db-hero {
-        position: relative;
-        height: 320px;
-        overflow: hidden;
-    }
-
-    .db-hero-svg {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-    }
-
-    .db-hero-content {
-        position: relative;
-        z-index: 2;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 52px;
-        animation: heroIn .6s ease both;
-    }
-
-    @keyframes heroIn {
-        from
-
-    {
-        opacity: 0;
-        transform: translateY(18px);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-
-    }
-
-    .db-hero-badge {
-        display: inline-flex;
-        align-items: center;
-        gap: 6px;
-        background: rgba(255,255,255,0.15);
-        backdrop-filter: blur(8px);
-        border: 1px solid rgba(255,255,255,0.25);
-        border-radius: 50px;
-        padding: 5px 14px;
+        height: 200px;
+        background: linear-gradient(135deg, #0d5c3a, #2eb87a);
         color: #fff;
-        font-size: .75rem;
-        font-weight: 600;
-        letter-spacing: .06em;
-        text-transform: uppercase;
-        margin-bottom: 14px;
-        width: fit-content;
+        display: flex;
+        align-items: center;
+        padding-left: 40px;
     }
 
     .db-hero-title {
-        font-family: 'Playfair Display', serif;
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: #ffffff;
-        margin: 0 0 10px;
-        text-shadow: 0 2px 16px rgba(0,0,0,0.2);
-        line-height: 1.2;
-    }
-
-    .db-hero-sub {
-        color: rgba(255,255,255,0.82);
-        font-size: .95rem;
-        max-width: 520px;
-        line-height: 1.6;
-        margin: 0 0 24px;
-    }
-
-    /* Hero stats */
-    .db-hero-stats {
-        display: flex;
-        align-items: center;
-        gap: 20px;
-        background: rgba(255,255,255,0.12);
-        backdrop-filter: blur(10px);
-        border: 1px solid rgba(255,255,255,0.2);
-        border-radius: 14px;
-        padding: 14px 24px;
-        width: fit-content;
-    }
-
-    .db-hero-stat {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .db-hero-stat-num {
-        font-size: 1.4rem;
-        font-weight: 700;
-        color: #fff;
-        line-height: 1;
-    }
-
-    .db-hero-stat-label {
-        font-size: .72rem;
-        color: rgba(255,255,255,0.72);
-        font-weight: 400;
-        margin-top: 3px;
-    }
-
-    .db-hero-stat-divider {
-        width: 1px;
-        height: 36px;
-        background: rgba(255,255,255,0.25);
-    }
-
-    /* ══ BODY ══ */
-    .db-body {
-        padding: 40px 52px 32px;
-        max-width: 1400px;
-        margin: 0 auto;
-    }
-
-    /* Section heading */
-    .db-section-head {
-        display: flex;
-        align-items: center;
-        gap: 16px;
-        margin-bottom: 28px;
-    }
-
-    .db-section-line {
-        flex: 1;
-        height: 1px;
-        background: linear-gradient(90deg, #c8e2d5, transparent);
-    }
-
-        .db-section-line:last-child {
-            background: linear-gradient(270deg, #c8e2d5, transparent);
-        }
-
-    .db-section-label {
-        font-size: .72rem;
-        font-weight: 700;
-        letter-spacing: .14em;
-        text-transform: uppercase;
-        color: #1a7a50;
-        white-space: nowrap;
-    }
-
-    /* ══ CARDS GRID ══ */
-    .db-cards-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 22px;
-    }
-
-    /* ══ CARD ══ */
-    .db-card {
-        background: #ffffff;
-        border-radius: 20px;
-        padding: 28px 24px 22px;
-        display: flex;
-        flex-direction: column;
-        gap: 16px;
-        text-decoration: none;
-        border: 1.5px solid rgba(0,0,0,0.06);
-        box-shadow: 0 2px 12px rgba(0,0,0,0.05);
-        transition: transform .25s ease, box-shadow .25s ease, border-color .25s ease;
-        position: relative;
-        overflow: hidden;
-        animation: cardIn .5s ease both;
-    }
-
-        .db-card:nth-child(1) {
-            animation-delay: .05s;
-        }
-
-        .db-card:nth-child(2) {
-            animation-delay: .10s;
-        }
-
-        .db-card:nth-child(3) {
-            animation-delay: .15s;
-        }
-
-        .db-card:nth-child(4) {
-            animation-delay: .20s;
-        }
-
-    @keyframes cardIn {
-        from
-
-    {
-        opacity: 0;
-        transform: translateY(20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: none;
-    }
-
-    }
-
-    .db-card:hover {
-        transform: translateY(-6px);
-        box-shadow: 0 16px 40px rgba(0,0,0,0.12);
-        border-color: var(--card-color);
-    }
-
-    /* Glow effect on hover */
-    .db-card-glow {
-        position: absolute;
-        inset: 0;
-        background: var(--card-color-light);
-        opacity: 0;
-        transition: opacity .25s;
-        border-radius: 20px;
-        pointer-events: none;
-    }
-
-    .db-card:hover .db-card-glow {
-        opacity: 1;
-    }
-
-    /* Icon */
-    .db-card-icon-wrap {
-        width: 64px;
-        height: 64px;
-        border-radius: 18px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        box-shadow: 0 6px 20px rgba(0,0,0,0.18);
-        position: relative;
-        z-index: 1;
-        flex-shrink: 0;
-        transition: transform .25s;
-    }
-
-    .db-card:hover .db-card-icon-wrap {
-        transform: scale(1.08) rotate(-3deg);
-    }
-
-    .db-card-icon {
-        font-size: 2rem !important;
-        color: #ffffff !important;
-    }
-
-    /* Body */
-    .db-card-body {
-        position: relative;
-        z-index: 1;
-        flex: 1;
-    }
-
-    .db-card-tag {
-        display: inline-block;
-        padding: 3px 10px;
-        background: var(--card-color-light);
-        color: var(--card-color);
-        border-radius: 50px;
-        font-size: .68rem;
-        font-weight: 700;
-        letter-spacing: .06em;
-        text-transform: uppercase;
-        margin-bottom: 8px;
-        transition: background .25s;
-    }
-
-    .db-card-title {
-        font-family: 'Playfair Display', serif;
-        font-size: 1.1rem;
-        font-weight: 700;
-        color: #0d3d26;
-        margin: 0 0 6px;
-        line-height: 1.3;
-    }
-
-    .db-card-desc {
-        font-size: .82rem;
-        color: #6b8c7a;
-        line-height: 1.55;
+        font-size: 2rem;
         margin: 0;
     }
 
-    /* Footer */
-    .db-card-footer {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        position: relative;
-        z-index: 1;
-        padding-top: 12px;
-        border-top: 1px solid rgba(0,0,0,0.06);
+    .db-hero-sub {
+        opacity: 0.8;
     }
 
-    .db-card-link {
-        font-size: .78rem;
-        font-weight: 600;
-        color: var(--card-color);
-        letter-spacing: .02em;
+    /* CARDS */
+    .db-cards-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+        padding: 40px;
     }
 
-    .db-card-arrow {
-        width: 30px;
-        height: 30px;
-        border-radius: 50%;
-        background: var(--card-color-light);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        color: var(--card-color) !important;
-        transition: background .2s, transform .2s;
+    .db-card {
+        background: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        text-decoration: none;
+        color: #000;
+        transition: 0.2s;
     }
 
-    .db-card:hover .db-card-arrow {
-        background: var(--card-color);
-        transform: translateX(3px);
-    }
-
-        .db-card:hover .db-card-arrow * {
-            color: #fff !important;
+        .db-card:hover {
+            transform: translateY(-5px);
         }
 
-    /* ══ FOOTER ══ */
-    .db-footer {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 10px;
-        margin-top: 48px;
-        padding-top: 20px;
-        border-top: 1px solid #ddeee6;
-        font-size: .78rem;
-        color: #9bbdad;
+    /* FIXED KEYFRAMES */
+    @@keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+
+        to {
+            opacity: 1;
+        }
     }
 
-    .db-footer-dot {
-        color: #c8e2d5;
-    }
-
-    /* ══ RESPONSIVE ══ */
+    /* FIXED MEDIA QUERIES */
     @@media (max-width: 1100px) {
         .db-cards-grid {
             grid-template-columns: repeat(2, 1fr);
         }
     }
 
-    @@media (max-width: 720px) {
-        .db-topbar {
-            padding: 12px 20px;
-        }
-
-        .db-hero-content {
-            padding: 0 24px;
-        }
-
-        .db-hero-title {
-            font-size: 1.6rem;
-        }
-
-        .db-hero-stats {
-            gap: 14px;
-            padding: 12px 16px;
-        }
-
-        .db-body {
-            padding: 28px 20px;
-        }
-
+    @@media (max-width: 700px) {
         .db-cards-grid {
             grid-template-columns: 1fr;
         }
