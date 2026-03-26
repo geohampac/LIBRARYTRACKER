@@ -8,62 +8,45 @@
 
 <div class="app-shell">
 
-    <!-- ═══ SIDEBAR ═══ -->
+    <!-- SIDEBAR -->
     <aside class="sidebar">
-
         <div class="sidebar-logo">
             <div class="sidebar-logo-icon">
-                <MudIcon Icon="@Icons.Material.Filled.MenuBook" Style="color:#fff; font-size:20px;" />
+                <MudIcon Icon="@Icons.Material.Filled.MenuBook" />
             </div>
-            <div class="sidebar-logo-text">
+            <div>
                 <span class="sidebar-brand">Library</span>
-                <span class="sidebar-brand-sub">Tracker</span>
+                <span class="sidebar-brand-sub">Tracker System</span>
             </div>
         </div>
 
-        <div class="sidebar-hills">
-            <svg viewBox="0 0 220 60" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
-                <ellipse cx="60" cy="70" rx="80" ry="50" fill="#1a6644" />
-                <ellipse cx="160" cy="70" rx="90" ry="55" fill="#1d7a50" />
-                <ellipse cx="110" cy="75" rx="70" ry="45" fill="#23935f" />
-            </svg>
-        </div>
+        <div class="sidebar-divider"></div>
 
         <nav class="sidebar-nav">
-            <p class="sidebar-nav-label">Navigation</p>
+            <p class="sidebar-nav-label">Main Menu</p>
 
             <a href="/dashboard" class="nav-item active">
-                <div class="nav-icon">
-                    <MudIcon Icon="@Icons.Material.Filled.Dashboard" Style="font-size:18px;" />
-                </div>
+                <MudIcon Icon="@Icons.Material.Filled.Dashboard" />
                 <span>Dashboard</span>
             </a>
 
             <a href="/book-review" class="nav-item">
-                <div class="nav-icon">
-                    <MudIcon Icon="@Icons.Material.Filled.RateReview" Style="font-size:18px;" />
-                </div>
+                <MudIcon Icon="@Icons.Material.Filled.RateReview" />
                 <span>Book Review</span>
             </a>
 
             <a href="/book-items" class="nav-item">
-                <div class="nav-icon">
-                    <MudIcon Icon="@Icons.Material.Filled.LibraryBooks" Style="font-size:18px;" />
-                </div>
+                <MudIcon Icon="@Icons.Material.Filled.LibraryBooks" />
                 <span>Book List</span>
             </a>
 
             <a href="/book-transaction" class="nav-item">
-                <div class="nav-icon">
-                    <MudIcon Icon="@Icons.Material.Filled.ReceiptLong" Style="font-size:18px;" />
-                </div>
+                <MudIcon Icon="@Icons.Material.Filled.ReceiptLong" />
                 <span>Book Transaction</span>
             </a>
 
             <a href="/book-borrow" class="nav-item">
-                <div class="nav-icon">
-                    <MudIcon Icon="@Icons.Material.Filled.ImportContacts" Style="font-size:18px;" />
-                </div>
+                <MudIcon Icon="@Icons.Material.Filled.ImportContacts" />
                 <span>Book Borrow</span>
             </a>
         </nav>
@@ -77,83 +60,52 @@
                 </div>
             </div>
         </div>
-
     </aside>
 
-    <!-- ═══ MAIN ═══ -->
+    <!-- MAIN -->
     <div class="main-area">
 
-        <!-- TOP BAR -->
+        <!-- TOPBAR -->
         <header class="topbar">
-            <div class="topbar-left">
+            <div>
                 <h2 class="topbar-title">Dashboard</h2>
                 <p class="topbar-sub">Welcome back, Admin!</p>
             </div>
-            <div class="topbar-right">
-                <button class="logout-btn" @onclick="Logout">
-                    <MudIcon Icon="@Icons.Material.Filled.Logout" Style="font-size:16px;" />
-                    <span>Logout</span>
-                </button>
-            </div>
+
+            <button class="logout-btn" @onclick="Logout">
+                <MudIcon Icon="@Icons.Material.Filled.Logout" />
+                Logout
+            </button>
         </header>
 
-        <!-- HERO BANNER -->
+        <!-- HERO -->
         <div class="hero-banner">
-            <svg class="hero-svg" viewBox="0 0 900 200" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMax meet">
-                <rect width="900" height="200" fill="#1a7a4e" />
-                <polygon points="600,10 720,145 480,145" fill="#155e3c" opacity="0.75" />
-                <polygon points="680,0 820,145 540,145" fill="#0d4a2e" opacity="0.9" />
-                <polygon points="100,40 200,145 0,145" fill="#155e3c" opacity="0.6" />
-                <ellipse cx="170" cy="210" rx="210" ry="95" fill="#2ea86a" />
-                <ellipse cx="480" cy="220" rx="260" ry="105" fill="#27935c" />
-                <ellipse cx="760" cy="215" rx="190" ry="90" fill="#23a060" />
-                <text x="350" y="75" font-size="30" fill="rgba(255,255,255,0.35)" font-family="serif">～</text>
-            </svg>
             <div class="hero-text">
                 <h1 class="hero-title">Library Tracker System</h1>
-                <p class="hero-sub">Manage your books, track borrowings, and stay organized — all in one place.</p>
+                <p class="hero-sub">
+                    Manage your books, track borrowings, and stay organized.
+                </p>
             </div>
         </div>
 
-        <!-- CARDS -->
+        <!-- CONTENT -->
         <div class="content-body">
-            <p class="section-label">Quick Access</p>
             <div class="cards-grid">
 
                 <a href="/book-review" class="db-card">
-                    <div class="card-icon-wrap green-icon">
-                        <MudIcon Icon="@Icons.Material.Filled.RateReview" Style="font-size:26px;" />
-                    </div>
                     <p class="card-title">Book Review</p>
-                    <p class="card-desc">Browse and manage reader reviews</p>
-                    <span class="card-pill">Open</span>
                 </a>
 
                 <a href="/book-items" class="db-card">
-                    <div class="card-icon-wrap teal-icon">
-                        <MudIcon Icon="@Icons.Material.Filled.LibraryBooks" Style="font-size:26px;" />
-                    </div>
                     <p class="card-title">Book List</p>
-                    <p class="card-desc">Catalog and inventory management</p>
-                    <span class="card-pill">Open</span>
                 </a>
 
                 <a href="/book-transaction" class="db-card">
-                    <div class="card-icon-wrap olive-icon">
-                        <MudIcon Icon="@Icons.Material.Filled.ReceiptLong" Style="font-size:26px;" />
-                    </div>
                     <p class="card-title">Book Transaction</p>
-                    <p class="card-desc">Track all lending activity</p>
-                    <span class="card-pill">Open</span>
                 </a>
 
                 <a href="/book-borrow" class="db-card">
-                    <div class="card-icon-wrap lime-icon">
-                        <MudIcon Icon="@Icons.Material.Filled.ImportContacts" Style="font-size:26px;" />
-                    </div>
                     <p class="card-title">Book Borrow</p>
-                    <p class="card-desc">Issue and return book loans</p>
-                    <span class="card-pill">Open</span>
                 </a>
 
             </div>
@@ -165,8 +117,7 @@
 @code {
     private void Logout()
     {
-        // Clear your auth/session state here, then redirect
-        Navigation.NavigateTo("/login");
+        Navigation.NavigateTo("/login", true);
     }
 
     private MudTheme _theme = new()
@@ -174,432 +125,7 @@
         PaletteLight = new PaletteLight
         {
             Primary = "#1a7a4e",
-            Background = "#f0f7f4"
+            Background = "#f4faf7"
         }
     };
 }
-
-<style>
-    @@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,400;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap');
-
-    *, *::before, *::after {
-        box-sizing: border-box;
-        margin: 0;
-        padding: 0;
-    }
-
-    /* ── SHELL ── */
-    .app-shell {
-        display: flex;
-        min-height: 100vh;
-        font-family: 'DM Sans', sans-serif;
-        background: #f0f7f4;
-    }
-
-    /* ── SIDEBAR ── */
-    .sidebar {
-        width: 240px;
-        flex-shrink: 0;
-        background: #0d5c3a;
-        display: flex;
-        flex-direction: column;
-        overflow: hidden;
-        position: relative;
-    }
-
-    .sidebar-logo {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 22px 20px 14px;
-        position: relative;
-        z-index: 2;
-    }
-
-    .sidebar-logo-icon {
-        width: 38px;
-        height: 38px;
-        border-radius: 10px;
-        background: rgba(255,255,255,0.15);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-    }
-
-    .sidebar-brand {
-        display: block;
-        font-family: 'Fraunces', serif;
-        font-weight: 600;
-        font-size: 15px;
-        color: #fff;
-        line-height: 1.1;
-    }
-
-    .sidebar-brand-sub {
-        display: block;
-        font-size: 11px;
-        color: rgba(255,255,255,0.5);
-        font-weight: 300;
-        letter-spacing: 0.5px;
-        text-transform: uppercase;
-    }
-
-    .sidebar-hills {
-        height: 48px;
-        overflow: hidden;
-        position: relative;
-        z-index: 1;
-    }
-
-        .sidebar-hills svg {
-            width: 100%;
-            height: 100%;
-        }
-
-    .sidebar-nav {
-        flex: 1;
-        padding: 14px 12px;
-        position: relative;
-        z-index: 2;
-    }
-
-    .sidebar-nav-label {
-        font-size: 10px;
-        font-weight: 500;
-        color: rgba(255,255,255,0.38);
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        padding: 0 10px;
-        margin-bottom: 8px;
-    }
-
-    .nav-item {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-        padding: 10px 12px;
-        border-radius: 10px;
-        text-decoration: none;
-        color: rgba(255,255,255,0.68);
-        font-size: 13.5px;
-        font-weight: 400;
-        transition: background 0.16s, color 0.16s;
-        margin-bottom: 2px;
-    }
-
-        .nav-item:hover {
-            background: rgba(255,255,255,0.1);
-            color: #fff;
-        }
-
-        .nav-item.active {
-            background: rgba(255,255,255,0.18);
-            color: #fff;
-            font-weight: 500;
-        }
-
-    .nav-icon {
-        width: 30px;
-        height: 30px;
-        border-radius: 8px;
-        background: rgba(255,255,255,0.08);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-    }
-
-    .nav-item.active .nav-icon {
-        background: rgba(255,255,255,0.2);
-    }
-
-    .nav-icon .mud-icon-root {
-        color: inherit !important;
-    }
-
-    .sidebar-footer {
-        padding: 14px 16px 18px;
-        border-top: 1px solid rgba(255,255,255,0.1);
-        position: relative;
-        z-index: 2;
-    }
-
-    .sidebar-user {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-
-    .sidebar-avatar {
-        width: 34px;
-        height: 34px;
-        border-radius: 50%;
-        background: #2ea86a;
-        color: #fff;
-        font-weight: 600;
-        font-size: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-shrink: 0;
-    }
-
-    .sidebar-user-name {
-        display: block;
-        font-size: 13px;
-        font-weight: 500;
-        color: #fff;
-    }
-
-    .sidebar-user-role {
-        display: block;
-        font-size: 11px;
-        color: rgba(255,255,255,0.45);
-        font-weight: 300;
-    }
-
-    /* ── MAIN ── */
-    .main-area {
-        flex: 1;
-        display: flex;
-        flex-direction: column;
-        min-width: 0;
-    }
-
-    /* ── TOPBAR ── */
-    .topbar {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        padding: 16px 32px;
-        background: #fff;
-        border-bottom: 1px solid rgba(0,0,0,0.07);
-    }
-
-    .topbar-title {
-        font-family: 'Fraunces', serif;
-        font-size: 18px;
-        font-weight: 600;
-        color: #0d5c3a;
-        letter-spacing: -0.3px;
-    }
-
-    .topbar-sub {
-        font-size: 12px;
-        color: #888;
-        font-weight: 300;
-        margin-top: 2px;
-    }
-
-    .logout-btn {
-        display: flex;
-        align-items: center;
-        gap: 7px;
-        padding: 9px 20px;
-        border-radius: 50px;
-        border: 1.5px solid #1a7a4e;
-        background: transparent;
-        color: #1a7a4e;
-        font-family: 'DM Sans', sans-serif;
-        font-size: 13px;
-        font-weight: 500;
-        cursor: pointer;
-        transition: background 0.18s, color 0.18s;
-    }
-
-        .logout-btn:hover {
-            background: #1a7a4e;
-            color: #fff;
-        }
-
-        .logout-btn .mud-icon-root {
-            color: inherit !important;
-        }
-
-    /* ── HERO ── */
-    .hero-banner {
-        position: relative;
-        height: 200px;
-        overflow: hidden;
-        background: #1a7a4e;
-    }
-
-    .hero-svg {
-        position: absolute;
-        inset: 0;
-        width: 100%;
-        height: 100%;
-    }
-
-    .hero-text {
-        position: absolute;
-        inset: 0;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        padding: 0 36px;
-        z-index: 2;
-    }
-
-    .hero-title {
-        font-family: 'Fraunces', serif;
-        font-size: 2rem;
-        font-weight: 600;
-        color: #fff;
-        letter-spacing: -0.5px;
-        margin-bottom: 8px;
-    }
-
-    .hero-sub {
-        font-size: 13px;
-        color: rgba(255,255,255,0.72);
-        font-weight: 300;
-        max-width: 400px;
-        line-height: 1.6;
-    }
-
-    /* ── CONTENT ── */
-    .content-body {
-        padding: 28px 32px 48px;
-    }
-
-    .section-label {
-        font-size: 11px;
-        font-weight: 500;
-        color: #888;
-        text-transform: uppercase;
-        letter-spacing: 1.2px;
-        margin-bottom: 16px;
-    }
-
-    /* ── CARDS ── */
-    .cards-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 16px;
-    }
-
-    .db-card {
-        background: #fff;
-        border-radius: 18px;
-        padding: 24px 20px 20px;
-        text-decoration: none;
-        color: #1a1a1a;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
-        cursor: pointer;
-        border: 1.5px solid transparent;
-        transition: border-color 0.18s, transform 0.18s, box-shadow 0.18s;
-    }
-
-        .db-card:hover {
-            border-color: #1a7a4e;
-            transform: translateY(-4px);
-            box-shadow: 0 8px 24px rgba(26,122,78,0.12);
-        }
-
-    .card-icon-wrap {
-        width: 52px;
-        height: 52px;
-        border-radius: 14px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        margin-bottom: 4px;
-    }
-
-        .card-icon-wrap .mud-icon-root {
-            color: inherit !important;
-        }
-
-    .green-icon {
-        background: #d0f0e2;
-        color: #0d5c3a;
-    }
-
-    .teal-icon {
-        background: #c8eee4;
-        color: #0a6b5a;
-    }
-
-    .olive-icon {
-        background: #daecd0;
-        color: #3a6624;
-    }
-
-    .lime-icon {
-        background: #e6f5d0;
-        color: #4a7a1a;
-    }
-
-    .card-title {
-        font-family: 'Fraunces', serif;
-        font-size: 15px;
-        font-weight: 600;
-        color: #1a1a1a;
-        margin: 0;
-    }
-
-    .card-desc {
-        font-size: 12px;
-        color: #888;
-        font-weight: 300;
-        line-height: 1.5;
-        margin: 0;
-        flex: 1;
-    }
-
-    .card-pill {
-        display: inline-flex;
-        align-items: center;
-        padding: 4px 14px;
-        border-radius: 50px;
-        background: #e8f5ef;
-        color: #0d5c3a;
-        font-size: 11px;
-        font-weight: 500;
-        letter-spacing: 0.3px;
-        align-self: flex-start;
-        margin-top: 4px;
-        transition: background 0.16s, color 0.16s;
-    }
-
-    .db-card:hover .card-pill {
-        background: #1a7a4e;
-        color: #fff;
-    }
-
-    /* ── RESPONSIVE ── */
-    @@media (max-width: 1100px) {
-        .cards-grid {
-            grid-template-columns: repeat(2, 1fr);
-        }
-    }
-
-    @@media (max-width: 768px) {
-        .sidebar {
-            width: 200px;
-        }
-
-        .content-body, .topbar {
-            padding-left: 20px;
-            padding-right: 20px;
-        }
-    }
-
-    @@media (max-width: 600px) {
-        .sidebar {
-            display: none;
-        }
-
-        .cards-grid {
-            grid-template-columns: 1fr;
-        }
-
-        .hero-title {
-            font-size: 1.5rem;
-        }
-    }
-</style>
